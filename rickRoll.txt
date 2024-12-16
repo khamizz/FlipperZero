@@ -1,0 +1,10 @@
+REM made by J0K3RS-L4UGH
+REM Basically it enters chrome and rickrolls with no ads
+GUI r
+DELAY 2000
+STRING c:\program files\google\chrome\application\chrome.exe
+ENTER
+DELAY 2000
+ALT d
+STRING https://www.youtube.com/watch?v=xvFZjo5PgG0
+ENTER
