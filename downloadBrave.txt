@@ -1,0 +1,9 @@
+REM Open Edge and launch rickrolls with no ads
+GUI r
+DELAY 2000
+STRING c:\program files (x86)\microsoft\edge\application\msedge.exe
+ENTER
+DELAY 2000
+ALT d
+STRING https://brave.com/download/
+ENTER
