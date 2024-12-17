@@ -1,0 +1,10 @@
+GUI r
+DELAY 750
+STRING powershell
+ENTER
+DELAY 2000
+STRING New-Item -Path "c:\" -Name "temp" -ItemType Directory;$url = "https://wallpapercave.com/wp/wp4081953.jpg";$outputPath = "c:\temp\img.jpg";$wallpaperStyle = 2;IWR -Uri $url -OutFile $outputPath
+STRING ;$signature = 'using System;using System.Runtime.InteropServices;public class Wallpaper {[DllImport("user32.dll", CharSet = CharSet.Auto)]public static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);}'
+STRING ;Add-Type -TypeDefinition $signature;$SPI_SETDESKWALLPAPER = 0x0014;$SPIF_UPDATEINIFILE = 0x01;$SPIF_SENDCHANGE = 0x02;[Wallpaper]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, $outputPath, $SPIF_UPDATEINIFILE -bor $SPIF_SENDCHANGE)
+STRING ;sleep 1;exit
+ENTER
